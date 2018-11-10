@@ -1,0 +1,14 @@
+#root{
+	/*padding은 fxml파일에서도 되고, css파일에서 적용해도 된다. */
+	-fx-padding:10;
+	
+	
+}
+
+#welcome-text{
+	/*글자크기 35,Arial Black체, 굵게, 선형 그라디언트 아래병형 파란색에서 흰색으로 변형 */
+	-fx-font-size:35;
+	-fx-font-family:"Arial Black";
+	-fx-font-weight:bold;
+	-fx-text-fill:linear-gradient(to bottom,blue,white);
+}

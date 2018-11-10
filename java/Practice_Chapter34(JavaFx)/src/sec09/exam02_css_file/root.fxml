@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+
+<HBox xmlns:fx="http://javafx.com/fxml/1" prefWidth="400" prefHeight="50" alignment="CENTER" spacing="20">
+	<children>
+	<!--ID선택자: id가 lblid이며, 유일한 값으로 설정해주는게 좋다.
+	중복해도 되지만 그런 용도로는 사용하지 않는다. 중복하지 않도록 하자.-->
+	<Label id="lblId" text="검정바탕,노란글씨"/>
+	<!--<Label id="lblId" text="검정바탕,노란글씨"/>-->
+	
+	<!--class선택자:Label을 lblClass로 그룹지었다.-->
+	<Label styleClass="lblClass" text="파란바탕, 흰글씨"/>
+	<Label styleClass="lblClass" text="파란바탕, 흰글씨"/>
+	</children>
+</HBox>
+

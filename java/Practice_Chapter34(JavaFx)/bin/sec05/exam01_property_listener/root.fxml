@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.Slider?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1"
+	prefWidth="700" prefHeight="400"
+	fx:controller="sec05.exam01_property_listener.RootController">
+	<!--BorderPane의 중앙에 Label 컨트롤을 배치하고 글자를 javaFc로 설정후 폰트를 0로 한다 -->
+	<center>
+		<VBox alignment="CENTER">
+			<!-- 컨트롤러의 참조를 위해 fx:id를 지정한다. -->
+			<Label fx:id="Label1" text="열심히 해라!">
+				<font>
+					<Font size="0" />
+				</font>
+			</Label>
+			<Label fx:id="Label2" text="밥 먹어야지!">
+				<font>
+					<Font size="0" />
+				</font>
+			</Label>
+		</VBox>
+	</center>
+	<bottom>
+		<!--컨트롤러의 참조를 위해 fx:id를 지정한다. -->
+		<Slider fx:id="slider" />
+	</bottom>
+</BorderPane>
+

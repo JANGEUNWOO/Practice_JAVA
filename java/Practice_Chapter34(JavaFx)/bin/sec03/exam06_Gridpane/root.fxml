@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+
+
+<!-- 폭만 300으로 설정하였고 각 셀간의 gap을 수평,수직 10픽셀만큼 주었다. 아울러, 폭만 설정했다는 것은 추가되는 컨트롤의 
+   크기로 수직간격은 자동으로 주어지게 만들어 지도록 하였다 -->
+<GridPane xmlns:fx="http://javafx.com/fxml/1" prefWidth="300"
+   prefHeight="10">
+
+   <padding>
+      <Insets topRightBottomLeft="10" />
+   </padding>
+
+   <children>
+      <!-- 0행 0열에 아이디란 Label컨트롤을 추가하겠다. -->
+      <Label text="아이디" GridPane.rowIndex="0" GridPane.columnIndex="0" />
+
+      <!-- 0행 1열에 TextField 컨트롤을 추가하겠다. 단, 빈 여백을 채우겠다(GridPane.hgrow="ALWAYS") -->
+      <TextField GridPane.rowIndex="0" GridPane.columnIndex="1"
+         GridPane.hgrow="ALWAYS" />
+
+      <!-- 1행 0열에 아이디란 Label컨트롤을 추가하겠다. -->
+      <Label text="패스워드" GridPane.rowIndex="1"
+         GridPane.columnIndex="0" />
+
+      <!-- 1행 1열에 PasswordField 컨트롤을 추가하겠다. 단, 빈 여백을 채우겠다(GridPane.hgrow="ALWAYS") -->
+      <PasswordField GridPane.rowIndex="1"
+         GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" />
+      <!-- HBox를 2행 0열부터 2칸을 병합(GridPane.columnSpan="2")하여 추가하겠다. 추가되는 컨트롤은 중앙정렬을 
+         하고 간격은 20픽셀로 하겠다. -->
+      <HBox GridPane.rowIndex="2" GridPane.columnIndex="1"
+         GridPane.columnSpan="2" alignment="CENTER" spacing="20">
+         <children>
+            <Button Text="로그인" />
+            <Button Text="취소" />
+
+         </children>
+      </HBox>
+   </children>
+
+</GridPane>
+
+

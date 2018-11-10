@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+
+
+<!--이벤트처리를 하게될 컨트롤러를 지정한다. 여기서는 root.fxml아니깐 패키지명.rootController라고 했다. -->
+<HBox xmlns:fx="http://javafx.com/fxml/1" prefWidth="200"
+	prefHeight="50" alignment="CENTER" spacing="20"
+	fx:controller="sec04.exam02_fxml_controller.RootController">
+	<!-- TODO Add Nodes -->
+	<children>
+		<!-- 각 버튼에 fx:id를 설정했다. 그 이유는 컨트롤러에서 이 컨트롤을 참조하기 위함이다. 컨트롤러에 만약 btn1,2,3이 
+			필드로 정의가 되어 있지 않다면 경고창이 들어온다. -->
+		<Button fx:id="btn1" text="버튼1" />
+		<Button fx:id="btn2" text="버튼2" />
+		<!-- <Button fx:id="btn3" text="버튼3"/> -->
+		<!-- 버튼3은 컨트롤러의 메서드를 직접 매핑하여 호출하는 형태이다. 그러므로 fx:id는 필요없다. 하지만 통상적으로 아래와 
+			같이 하는 것 보다는 위와 같이 하는 것이 관례적이고 보기도 좋다. -->
+		<Button text="버튼3" onAction="#handleBtn3Action" />
+	</children>
+</HBox>
+

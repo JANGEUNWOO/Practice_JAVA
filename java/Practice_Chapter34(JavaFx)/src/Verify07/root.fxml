@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.collections.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.TextArea?>
+
+<AnchorPane prefHeight="439.0" prefWidth="621.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="verify07.RootController">
+   <children>
+     <MenuBar prefHeight="25.0" prefWidth="600.0">
+        <menus>
+          <Menu text="File">
+            <items>
+              <MenuItem text="Open" onAction="#handleOpen"/>
+              <MenuItem text="Close" onAction="#handleExit"/>
+            </items>
+         </Menu>
+        </menus>
+      </MenuBar>
+      <StackPane layoutY="32.0" prefHeight="370.0" prefWidth="500.0">
+         <children>
+              <!--처음 실행시 preserveRatio가 true로 설정이 되어있다. 그렇게 되면 원본을 생성할 당시의 
+                  비율대로 유지하게 되어 꽉찬 화면을 못볼 수도 있다. 
+                  하여 이럴때는 유동적으로 생각하여, preserveRatio를 false로 해주면 우리가 설정한 
+                폭과 높이로 보여지게 할수 있다.
+             -->         
+            
+            <MediaView fx:id="mediaView" fitHeight="370.0" fitWidth="500.0" preserveRatio="false" />
+         </children>
+     <Label layoutX="517.0" layoutY="258.0" prefHeight="15.0" prefWidth="74.0" text="0/0 sec" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,19 @@
+/* 주석은 ctrl+shift+/ */
+
+/*전체 Label을 선택하여 적용함 */
+Label{
+	-fx-padding:5; /*전체 Label안쪽 여백을 5픽셀 줌 */
+}
+
+/*id가 lblId를 가진 컨트롤만 적용함 id는 한문서에서 유일한 값을 가진다(unique) */
+
+#lblId{
+	-fx-background-color:black; /*배경이 검정 */
+	-fx-text-fill:yellow; /*글자색을 노랑으로 지정 */
+}
+
+/*styleClass가 lblClass인 컨트롤 것만 스타일 적용함 */
+.lblClass{
+	-fx-background-color: pink  ;
+	-fx-text-fill: white ;
+}

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.image.Image?>
+
+<AnchorPane fx:controller="application.RootController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="642.0" prefWidth="559.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" >
+   <children>
+      <StackPane layoutY="58.0" prefHeight="387.0" prefWidth="559.0">
+         <children>
+            <TabPane prefHeight="372.0" prefWidth="561.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="　기간특가　" />
+                <Tab text="　세트메뉴　">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="348.0" prefWidth="495.0" />
+                  </content>
+                </Tab>
+                  <Tab text="　　버거류　　">
+                     <content>
+                        <ScrollPane prefHeight="200.0" prefWidth="200.0">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="360.0" prefWidth="560.0">
+                                 <children>
+                                    <ImageView fitHeight="91.0" fitWidth="73.0" layoutX="28.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                    <Image url="@images\Burger\불고기와퍼.jpg" />
+                                    </image>
+                                    </ImageView>
+                                    <Button fx:id="btn1" layoutX="27.0" layoutY="101.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="74.0" text="선택" />
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </ScrollPane>
+                     </content>
+                  </Tab>
+                  <Tab text="　　사이드　　">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                     </content>
+                  </Tab>
+                  <Tab text="　　음료　　">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <StackPane prefHeight="437.0" prefWidth="632.0">
+                                 <children>
+                                    <GridPane>
+                                      <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                    </GridPane>
+                                 </children>
+                              </StackPane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="　　스낵킹　　">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                     </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+         </children>
+      </StackPane>
+      <Label layoutX="178.0" layoutY="10.0" prefHeight="50.0" prefWidth="212.0" text="BURGERKING" textAlignment="CENTER">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <ListView fx:id="lv" layoutY="445.0" prefHeight="197.0" prefWidth="359.0" />
+      <Label layoutX="358.0" layoutY="508.0" prefHeight="50.0" prefWidth="201.0" text="총 합계 급액 :" />
+      <RadioButton layoutX="376.0" layoutY="465.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="80.0" text="매장식사" />
+      <RadioButton layoutX="459.0" layoutY="465.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="80.0" text="Take out" />
+      <Button layoutX="358.0" layoutY="560.0" mnemonicParsing="false" prefHeight="82.0" prefWidth="201.0" text="Button" />
+   </children>
+</AnchorPane>

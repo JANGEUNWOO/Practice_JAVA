@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextField?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1"
+	xmlns="http://javafx.com/javafx/8"
+	fx:controller="Verify03.RootController">
+	<padding>
+		<Insets topRightBottomLeft="10" />
+	</padding>
+
+	<children>
+		<TextField fx:id="textfield" prefHeight="80" prefWidth="300" />
+	</children>
+	<children>
+
+		<GridPane hgap="10" prefHeight="500" prefWidth="400"
+			vgap="10">
+
+			<padding>
+				<Insets topRightBottomLeft="10" />
+			</padding>
+
+			<children>
+				<Button prefHeight="100" prefWidth="100" text="Num&#10;Lock"
+					GridPane.columnIndex="0" GridPane.rowIndex="0" onAction="#operand" />
+				<Button prefHeight="100" prefWidth="100" text="/"
+					GridPane.columnIndex="1" GridPane.rowIndex="0" onAction="#operator" />
+				<Button prefHeight="100" prefWidth="100" text="*"
+					GridPane.columnIndex="2" GridPane.rowIndex="0" onAction="#operator" />
+				<Button prefHeight="100" prefWidth="100" text="-"
+					GridPane.columnIndex="3" GridPane.rowIndex="0" onAction="#operator" />
+				<Button prefHeight="100" prefWidth="100" text="7"
+					GridPane.columnIndex="0" GridPane.rowIndex="1" onAction="#operand" />
+				<Button prefHeight="100" prefWidth="100" text="8"
+					GridPane.columnIndex="1" GridPane.rowIndex="1" onAction="#operand" />
+				<Button prefHeight="100" prefWidth="100" text="9"
+					GridPane.columnIndex="2" GridPane.rowIndex="1" onAction="#operand" />
+				<Button prefHeight="200" prefWidth="100" text="+"
+					GridPane.columnIndex="3" GridPane.rowSpan="2" GridPane.rowIndex="1" onAction="#operator" />
+				<Button prefHeight="200" prefWidth="100" text="="
+					GridPane.columnIndex="3" GridPane.rowIndex="3" GridPane.rowSpan="2" onAction="#operator" />
+				<Button prefHeight="100" prefWidth="100" text="4"
+					GridPane.columnIndex="0" GridPane.rowIndex="2" onAction="#operand" />
+				<Button prefHeight="100" prefWidth="100" text="5"
+					GridPane.columnIndex="1" GridPane.rowIndex="2" onAction="#operand" />
+				<Button prefHeight="100" prefWidth="100" text="6"
+					GridPane.columnIndex="2" GridPane.rowIndex="2" onAction="#operand" />
+				<Button prefHeight="100" prefWidth="100" text="1"
+					GridPane.columnIndex="0" GridPane.rowIndex="3" onAction="#operand" />
+				<Button prefHeight="100" prefWidth="100" text="2"
+					GridPane.columnIndex="1" GridPane.rowIndex="3" onAction="#operand" />
+				<Button prefHeight="100" prefWidth="100" text="3"
+					GridPane.columnIndex="2" GridPane.rowIndex="3" onAction="#operand" />
+				<Button prefHeight="100" prefWidth="200" text="0"
+					GridPane.columnIndex="0" GridPane.columnSpan="2"
+					GridPane.rowIndex="4" onAction="#operand" />
+				<Button prefHeight="100" prefWidth="100" text="."
+					GridPane.columnIndex="2" GridPane.rowIndex="4" onAction="#operand" />
+
+
+			</children>
+			<columnConstraints>
+				<ColumnConstraints />
+				<ColumnConstraints />
+				<ColumnConstraints />
+				<ColumnConstraints />
+			</columnConstraints>
+			<rowConstraints>
+				<RowConstraints />
+				<RowConstraints />
+				<RowConstraints />
+				<RowConstraints />
+				<RowConstraints />
+			</rowConstraints>
+		</GridPane>
+	</children>
+
+
+</VBox>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.HBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+
+<HBox fx:id="hbox" xmlns:fx="http://javafx.com/fxml/1" spacing="10"
+	fx:controller="sec08.RootController">
+	<padding>
+		<Insets topRightBottomLeft="10" />
+	</padding>
+	<children>
+		<!--이벤트 처리 추가 -->
+		<Button text="파일오픈선택" onAction="#handleOpenFileChooser" />
+		<Button text="파일저장선택" onAction="#handleSaveFileChooser" />
+		<Button text="디렉토리선택" onAction="#handleOpenDirectoryChooser" />
+		<Button text="팝업" onAction="#handlePopup" />
+		<Button text="사용자정의" onAction="#handleCustom" />
+	</children>
+</HBox>
+

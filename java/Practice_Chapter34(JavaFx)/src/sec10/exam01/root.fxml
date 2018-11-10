@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+
+<AnchorPane prefHeight="100.0" prefWidth="200.0"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="sec10.exam01.RootController">
+	<children>
+		<!--인라인스타일로 css코드를 추가한다. -->
+		<Label fx:id="lblTime" text="00:00:00" alignment="CENTER"
+			layoutX="10.0" layoutY="15.0" prefHeight="35.0" prefWidth="100.0"
+			style="-fx-background-color:black; -fx-text-fill:yellow; -fx-font-size: 20; -fx-background-radius:20;" />
+		<Button fx:id="btnStart" layoutX="23.0" layoutY="63.0"
+			prefHeight="30.0" prefWidth="60.0" text="시작" />
+		<Button fx:id="btnStop" layoutX="114.0" layoutY="63.0"
+			prefHeight="30.0" prefWidth="60.0" text="멈춤" />
+	</children>
+</AnchorPane>
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<StackPane xmlns:fx="http://javafx.com/fxml">
+	<!-- 그림은 가로와 세로의 바율이 있다. 그림이 깨지지않도록 원본을 유지하기 위해 preserveRatio를 true로 설정해주면 
+		된다. false를 설정하면 그림의 비율이 깨진다. 고정된폭을 주니깐 preserveRatio를 false로 설정하면 원본 이미지가 
+		깨지고 주어진 크기대로 맞추어진다. true로 바꿔서 실행해보자 -->
+	<ImageView preserveRatio="false" fitWidth="200"
+		fitHeight="200">
+		<image>
+			<Image url="@images/바탕이미지.jpg" />
+		</image>
+	</ImageView>
+
+	<ImageView preserveRatio="true" fitWidth="150"
+		fitHeight="150">
+		<image>
+			<Image url="@images/김연아.jpg" />
+		</image>
+	</ImageView>
+</StackPane>
+
