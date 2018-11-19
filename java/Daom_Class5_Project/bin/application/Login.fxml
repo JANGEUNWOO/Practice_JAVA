@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="461.0" prefWidth="589.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+	<children>
+		<Button fx:id="btn1" layoutX="217.0" layoutY="363.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="73.0" text="로그인" />
+
+      		
+      		<Button fx:id="btn2" layoutX="324.0" layoutY="363.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="73.0" text="회원가입" />
+		
+      		
+		<TextField fx:id="txtID" layoutX="205.0" layoutY="264.0" promptText="ID">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</TextField>
+		<PasswordField fx:id="txtPassword" layoutX="205.0" layoutY="309.0" promptText="Password">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</PasswordField>
+		<Label fx:id="lblStatus" alignment="CENTER" layoutX="157.0" layoutY="230.0" prefHeight="19.0" prefWidth="300.0" text="Status">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="56.0" layoutY="89.0" prefHeight="65.0" prefWidth="503.0" text="채팅 프로그램" textAlignment="CENTER">
+         <font>
+            <Font name="Arabic Typesetting" size="56.0" />
+         </font>
+      </Label>
+	</children>
+</AnchorPane>

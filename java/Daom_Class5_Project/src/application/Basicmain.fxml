@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.media.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.BasicMainController">
+	<children>
+		<Label fx:id="username" alignment="CENTER" contentDisplay="CENTER" layoutX="41.0" layoutY="84.0" prefHeight="64.0" prefWidth="230.0" textAlignment="JUSTIFY" />
+      <Button fx:id="chat_exe" layoutX="185.0" layoutY="222.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="102.0" text="채팅실행하기" textAlignment="JUSTIFY" />
+      <Button fx:id="server_exe" layoutX="24.0" layoutY="222.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="102.0" text="서버 열기" />
+	</children>
+</AnchorPane>

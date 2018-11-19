@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.Button?>
+
+<BorderPane prefHeight="400" prefWidth="604.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ChatController">
+	<!-- TODO Add Nodes -->
+	<padding>
+      <Insets topRightBottomLeft="5" />
+   </padding>
+   <center>
+      <TextArea fx:id="textArea" editable="false" prefHeight="334.0" prefWidth="544.0" BorderPane.alignment="CENTER" />
+   </center>
+   <top>
+      <HBox prefHeight="20.0" prefWidth="390.0" spacing="5.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="userName" prefHeight="23.0" prefWidth="259.0" promptText="닉네임을 입력하세요" />
+            <TextField fx:id="iptext" prefHeight="23.0" prefWidth="211.0" text="192.168.0.21" />
+            <TextField fx:id="porttext" prefHeight="23.0" prefWidth="134.0" />
+         </children>
+         <padding>
+            <Insets bottom="5.0 " left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </HBox>
+   </top>
+   <bottom>
+      <HBox prefHeight="20.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="connectionButton" mnemonicParsing="false" prefHeight="23.0" prefWidth="69.0" text="접속하기" />
+            <TextField fx:id="input" disable="true" prefHeight="23.0" prefWidth="440.0" promptText="내용을 입력하세요" />
+            <Button fx:id="sendButton" disable="true" mnemonicParsing="false" prefHeight="23.0" prefWidth="83.0" text="보내기" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
