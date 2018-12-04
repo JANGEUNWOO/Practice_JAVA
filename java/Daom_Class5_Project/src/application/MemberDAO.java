@@ -64,7 +64,6 @@ public class MemberDAO {
 			pstmt.setString(1, id);
 			pstmt.setString(2, password);
 			ResultSet rs = pstmt.executeQuery();
-
 			// select한 결과는 ResultSet에 담겨 리턴된다.
 			if (rs.next()) {
 				name = rs.getString("name");

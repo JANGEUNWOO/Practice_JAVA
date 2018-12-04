@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.image.Image?>
 
-<AnchorPane fx:controller="application.RootController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="642.0" prefWidth="559.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" >
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="642.0" prefWidth="559.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RootController">
    <children>
       <StackPane layoutY="58.0" prefHeight="387.0" prefWidth="559.0">
          <children>
@@ -46,28 +46,20 @@
                   </Tab>
                   <Tab text="　　음료　　">
                      <content>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-                           <children>
-                              <StackPane prefHeight="437.0" prefWidth="632.0">
+                        <ScrollPane prefHeight="200.0" prefWidth="200.0">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="360.0" prefWidth="560.0">
                                  <children>
-                                    <GridPane>
-                                      <columnConstraints>
-                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                                      </columnConstraints>
-                                      <rowConstraints>
-                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                      </rowConstraints>
-                                    </GridPane>
+                                    <ImageView fitHeight="91.0" fitWidth="73.0" layoutX="28.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                    <Image url="@images\Baverage\미닛메이드.jpg" />
+                                    </image>
+                                    </ImageView>
+                                    <Button fx:id="btn23" layoutX="27.0" layoutY="101.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="73.0" text="선택" />
                                  </children>
-                              </StackPane>
-                           </children>
-                        </AnchorPane>
+                              </AnchorPane>
+                          </content>
+                        </ScrollPane>
                      </content>
                   </Tab>
                   <Tab text="　　스낵킹　　">
@@ -84,10 +76,23 @@
             <Font size="32.0" />
          </font>
       </Label>
-      <ListView fx:id="lv" layoutY="445.0" prefHeight="197.0" prefWidth="359.0" />
-      <Label layoutX="358.0" layoutY="508.0" prefHeight="50.0" prefWidth="201.0" text="총 합계 급액 :" />
-      <RadioButton layoutX="376.0" layoutY="465.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="80.0" text="매장식사" />
-      <RadioButton layoutX="459.0" layoutY="465.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="80.0" text="Take out" />
-      <Button layoutX="358.0" layoutY="560.0" mnemonicParsing="false" prefHeight="82.0" prefWidth="201.0" text="Button" />
+      <Label fx:id="total_amount" layoutX="358.0" layoutY="499.0" prefHeight="43.0" prefWidth="201.0" />
+      <RadioButton fx:id="rb1" layoutX="376.0" layoutY="460.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="80.0" text="매장식사">
+         <toggleGroup>
+            <ToggleGroup fx:id="Type" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="rb2" layoutX="459.0" layoutY="460.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="80.0" text="Take out" toggleGroup="$Type" />
+      
+      <TableView fx:id="tv" layoutY="451.0" prefHeight="191.0" prefWidth="358.0">
+        <columns>
+          <TableColumn fx:id="tc_name" prefWidth="180.0" text="주문명" />
+          <TableColumn fx:id="tc_cost" prefWidth="177.0" text="가격" />
+        </columns>
+      </TableView>
+      <Button fx:id="payment" layoutX="461.0" layoutY="542.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="98.0" text="결제" />
+      <Button fx:id="allCancel" layoutX="358.0" layoutY="592.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="104.0" text="전체 취소 " />
+      <Button fx:id="partCancel" layoutX="358.0" layoutY="542.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="104.0" text="부분 취소" />
+      <TextField fx:id="totalprice" layoutX="413.0" layoutY="505.0" promptText="0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="365.0" layoutY="505.0" prefHeight="23.0" prefWidth="45.0" text="Total" textAlignment="CENTER" />
    </children>
 </AnchorPane>
