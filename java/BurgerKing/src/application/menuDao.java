@@ -79,21 +79,21 @@ public class MenuDao {
    // TableView에 선택된 메뉴들을 DB에 저장함
    public void selectedMenu_Insert() {
       PreparedStatement pstmt = null;
-      String sql = "insert into selected_tbl(name, cost, Eating_Type) values(?,?,?)";
+      String sql = "insert into selected_tbl(name, cost) values(?,?)";
 
       try {
          pstmt = conn.prepareStatement(sql);
 
          for (int i = 0; i < data.size(); i++) {
-            String sname1 = String.valueOf(data.get(2).getName());
-            String sname2 = String.valueOf(data.get(3).getCost());
+            
+        	String sname1 = String.valueOf(data.get(i).getName());
+            String sname2 = String.valueOf(data.get(i).getCost());
             pstmt.setString(1, sname1);
             pstmt.setString(2, sname2);
             
-            RootController rc=new RootController();
-            pstmt.setString(3, rc.radioSelect());
+            /*RootController rc=new RootController();
+            pstmt.setString(3, rc.radioSelect());*/
             pstmt.executeUpdate();
-
          }
 
       } catch (Exception e) {
