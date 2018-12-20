@@ -84,15 +84,19 @@ public class MenuDao {
       try {
          pstmt = conn.prepareStatement(sql);
 
+         RootController rc=new RootController();
+         
+         
          for (int i = 0; i < data.size(); i++) {
             
         	String sname1 = String.valueOf(data.get(i).getName());
             String sname2 = String.valueOf(data.get(i).getCost());
+            
+           
             pstmt.setString(1, sname1);
             pstmt.setString(2, sname2);
-            
-            /*RootController rc=new RootController();
-            pstmt.setString(3, rc.radioSelect());*/
+           
+
             pstmt.executeUpdate();
          }
 

@@ -27,12 +27,55 @@
                           <content>
                             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="360.0" prefWidth="560.0">
                                  <children>
-                                    <ImageView fitHeight="91.0" fitWidth="73.0" layoutX="28.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                    <ImageView fitHeight="91.0" fitWidth="73.0" layoutX="20.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                                     <image>
                                     <Image url="@images\Burger\불고기와퍼.jpg" />
                                     </image>
                                     </ImageView>
-                                    <Button fx:id="btn1" layoutX="27.0" layoutY="101.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="74.0" text="선택" />
+                                    <Button fx:id="btn1" layoutX="19.0" layoutY="101.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="74.0" text="선택" />
+                                    <ImageView fitHeight="91.0" fitWidth="73.0" layoutX="166.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@images/Burger/와퍼.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="91.0" fitWidth="73.0" layoutX="311.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@images/Burger/치즈와퍼.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="91.0" fitWidth="73.0" layoutX="452.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@images/Burger/치즈와퍼주니어.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Button fx:id="btn2" layoutX="165.0" layoutY="101.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="74.0" text="선택" />
+                                    <Button fx:id="btn3" layoutX="310.0" layoutY="100.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="74.0" text="선택" />
+                                    <Button fx:id="btn4" layoutX="452.0" layoutY="99.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="74.0" text="선택" />
+                                    <ImageView fitHeight="91.0" fitWidth="73.0" layoutX="20.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@images/Burger/콰트로치즈와퍼.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="91.0" fitWidth="73.0" layoutX="165.0" layoutY="177.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@images/Burger/통새우스테이크.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="91.0" fitWidth="73.0" layoutX="311.0" layoutY="177.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@images/Burger/통새우와퍼.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="91.0" fitWidth="73.0" layoutX="453.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@images/Burger/트러플콰트로머쉬룸스테이크.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Button fx:id="btn5" layoutX="19.0" layoutY="261.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="74.0" text="선택" />
+                                    <Button fx:id="btn6" layoutX="164.0" layoutY="263.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="74.0" text="선택" />
+                                    <Button fx:id="btn7" layoutX="310.0" layoutY="263.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="74.0" text="선택" />
+                                    <Button fx:id="btn8" layoutX="452.0" layoutY="263.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="74.0" text="선택" />
+                                    <Button fx:id="btn124" layoutX="19.0" layoutY="421.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="74.0" text="선택" />
                                  </children>
                               </AnchorPane>
                           </content>
@@ -50,12 +93,54 @@
                           <content>
                             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="360.0" prefWidth="560.0">
                                  <children>
-                                    <ImageView fitHeight="91.0" fitWidth="73.0" layoutX="28.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                    <ImageView fitHeight="91.0" fitWidth="73.0" layoutX="23.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                                     <image>
                                     <Image url="@images\Baverage\미닛메이드.jpg" />
                                     </image>
                                     </ImageView>
-                                    <Button fx:id="btn23" layoutX="27.0" layoutY="101.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="73.0" text="선택" />
+                                    <Button fx:id="btn23" layoutX="23.0" layoutY="101.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="73.0" text="선택" />
+                                    <ImageView fitHeight="91.0" fitWidth="73.0" layoutX="163.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@images/Baverage/베리베리젤리에이드.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="91.0" fitWidth="73.0" layoutX="308.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@images/Baverage/생수.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="91.0" fitWidth="73.0" layoutX="451.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@images/Baverage/스프라이트.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Button fx:id="btn24" layoutX="163.0" layoutY="101.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="73.0" text="선택" />
+                                    <Button fx:id="btn25" layoutX="308.0" layoutY="101.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="73.0" text="선택" />
+                                    <Button fx:id="btn26" layoutX="451.0" layoutY="101.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="73.0" text="선택" />
+                                    <ImageView fitHeight="91.0" fitWidth="73.0" layoutX="23.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@images/Baverage/아메리카노.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="91.0" fitWidth="73.0" layoutX="163.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@images/Baverage/애플망고젤리에이드.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="91.0" fitWidth="73.0" layoutX="308.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@images/Baverage/애플모히또.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="91.0" fitWidth="73.0" layoutX="451.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@images/Baverage/카페라떼.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Button fx:id="btn27" layoutX="23.0" layoutY="267.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="73.0" text="선택" />
+                                    <Button fx:id="btn28" layoutX="163.0" layoutY="267.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="73.0" text="선택" />
+                                    <Button fx:id="btn29" layoutX="308.0" layoutY="267.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="73.0" text="선택" />
+                                    <Button fx:id="btn30" layoutX="451.0" layoutY="267.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="73.0" text="선택" />
                                  </children>
                               </AnchorPane>
                           </content>
@@ -77,11 +162,12 @@
          </font>
       </Label>
       <Label fx:id="total_amount" layoutX="358.0" layoutY="499.0" prefHeight="43.0" prefWidth="201.0" />
-      <RadioButton fx:id="rb1" layoutX="376.0" layoutY="460.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="80.0" text="매장식사">
-         <toggleGroup>
-            <ToggleGroup fx:id="Type" />
-         </toggleGroup></RadioButton>
-      <RadioButton fx:id="rb2" layoutX="459.0" layoutY="460.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="80.0" text="Take out" toggleGroup="$Type" />
+      
+      <fx:define><ToggleGroup fx:id="group"/></fx:define>
+      
+      <RadioButton fx:id="rb1" layoutX="376.0" layoutY="460.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="80.0" text="매장식사" toggleGroup="$group" />
+        
+      <RadioButton fx:id="rb2" layoutX="459.0" layoutY="460.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="80.0" text="Take out" toggleGroup="$group" />
       
       <TableView fx:id="tv" layoutY="451.0" prefHeight="191.0" prefWidth="358.0">
         <columns>

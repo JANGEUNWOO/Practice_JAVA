@@ -18,7 +18,7 @@ public class ComparatorExample {
 		treeSet.add(new Fruit("복숭아", 3500));
 		treeSet.add(new Fruit("바나나", 3400));
 		treeSet.add(new Fruit("자두", 2500));
-		treeSet.add(new Fruit("호박", 1001));
+		treeSet.add(new Fruit("호박", 1000));
 		// catch(Exception e){
 		// System.out.println("정렬 기준이 없음");
 		// e.getMessage();
