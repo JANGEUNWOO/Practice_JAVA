@@ -5,38 +5,38 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="462.0" prefWidth="470.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:controller="application.RootController2" prefHeight="462.0" prefWidth="470.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <TreeTableView layoutX="47.0" layoutY="46.0" prefHeight="138.0" prefWidth="87.0">
+      <TableView fx:id="cook_tv1" layoutX="47.0" layoutY="46.0" prefHeight="138.0" prefWidth="87.0">
         <columns>
-          <TreeTableColumn prefWidth="86.0" text="C1" />
+          <TableColumn fx:id="tv1_name" prefWidth="86.0" text="주문명" />
         </columns>
-      </TreeTableView>
-      <TreeTableView layoutX="185.0" layoutY="46.0" prefHeight="138.0" prefWidth="87.0">
+      </TableView>
+      <TableView layoutX="185.0" layoutY="46.0" prefHeight="138.0" prefWidth="87.0">
          <columns>
-            <TreeTableColumn prefWidth="86.0" text="C1" />
+            <TableColumn prefWidth="86.0" text="C1" />
          </columns>
-      </TreeTableView>
-      <TreeTableView layoutX="184.0" layoutY="284.0" prefHeight="138.0" prefWidth="87.0">
+      </TableView>
+      <TableView layoutX="184.0" layoutY="284.0" prefHeight="138.0" prefWidth="87.0">
          <columns>
-            <TreeTableColumn prefWidth="86.0" text="C1" />
+            <TableColumn prefWidth="86.0" text="C1" />
          </columns>
-      </TreeTableView>
-      <TreeTableView layoutX="326.0" layoutY="284.0" prefHeight="138.0" prefWidth="87.0">
+      </TableView>
+      <TableView layoutX="326.0" layoutY="284.0" prefHeight="138.0" prefWidth="87.0">
          <columns>
-            <TreeTableColumn prefWidth="86.0" text="C1" />
+            <TableColumn prefWidth="86.0" text="C1" />
          </columns>
-      </TreeTableView>
-      <TreeTableView layoutX="326.0" layoutY="47.0" prefHeight="138.0" prefWidth="87.0">
+      </TableView>
+      <TableView layoutX="326.0" layoutY="47.0" prefHeight="138.0" prefWidth="87.0">
          <columns>
-            <TreeTableColumn prefWidth="86.0" text="C1" />
+            <TableColumn prefWidth="86.0" text="C1" />
          </columns>
-      </TreeTableView>
-      <TreeTableView layoutX="47.0" layoutY="285.0" prefHeight="138.0" prefWidth="87.0">
+      </TableView>
+      <TableView layoutX="47.0" layoutY="285.0" prefHeight="138.0" prefWidth="87.0">
          <columns>
-            <TreeTableColumn prefWidth="86.0" text="C1" />
+            <TableColumn prefWidth="86.0" text="C1" />
          </columns>
-      </TreeTableView>
+      </TableView>
+      <Button fx:id="btn1" layoutX="70.0" layoutY="185.0" mnemonicParsing="false" text="완료" />
    </children>
 </AnchorPane>

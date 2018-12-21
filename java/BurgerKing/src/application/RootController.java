@@ -1,5 +1,6 @@
 package application;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -7,7 +8,11 @@ import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
@@ -17,10 +22,11 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.Toggle;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.stage.Stage;
 
 public class RootController implements Initializable {
-	
-	//root관련 FXML 변수들
+
+	// root관련 FXML 변수들
 	@FXML
 	Label total_amount;
 
@@ -59,23 +65,14 @@ public class RootController implements Initializable {
 
 	@FXML
 	RadioButton rb2;
-	
-	//Selected_list관련 FXML변수들
-	
-	
 
 	MenuDao mdao = new MenuDao();
 
-	/*public String radioselect() {
-		String message = "";
-		if (rb1.isSelected()) {
-			message += rb1.getText() + "\n";
-		}
-		if (rb2.isSelected()) {
-			message += rb2.getText() + "\n";
-		}
-		return message;
-	}*/
+	/*
+	 * public String radioselect() { String message = ""; if (rb1.isSelected()) {
+	 * message += rb1.getText() + "\n"; } if (rb2.isSelected()) { message +=
+	 * rb2.getText() + "\n"; } return message; }
+	 */
 
 	public void Calculator() {
 		int price = 0;
@@ -119,8 +116,6 @@ public class RootController implements Initializable {
 		group.selectedToggleProperty().addListener(new ChangeListener<Toggle>() {
 			@Override
 			public void changed(ObservableValue<? extends Toggle> observable, Toggle oldValue, Toggle newValue) {
-
-				
 
 			}
 		});
@@ -245,8 +240,21 @@ public class RootController implements Initializable {
 
 	private void handle_payment(ActionEvent event) {
 		System.out.println("결제");
-		mdao.selectedMenu_Insert();
 
+		Parent parent;
+		try {
+			// ((Node) (event.getSource())).getScene().getWindow().hide();
+			parent = FXMLLoader.load(getClass().getResource("Selected_list.fxml"));
+			Stage stage = new Stage();
+			Scene scene = new Scene(parent);
+			stage.setScene(scene);
+			stage.setTitle("주방 주문 확인");
+			stage.show();
+		} catch (IOException e1) {
+			e1.printStackTrace();
+		}
+
+		tv.getItems().removeAll(tv.getItems());
 	}
 
 }

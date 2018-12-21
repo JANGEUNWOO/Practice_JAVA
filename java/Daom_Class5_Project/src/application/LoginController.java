@@ -64,7 +64,7 @@ public class LoginController implements Initializable {
 			lblStatus.setText("로그인이 되었습니다");
 
 			try {
-				((Node) (event.getSource())).getScene().getWindow().hide();
+				//((Node) (event.getSource())).getScene().getWindow().hide();
 				Parent parent = FXMLLoader.load(getClass().getResource("Basicmain.fxml"));
 				Stage stage = new Stage();
 				Scene scene = new Scene(parent);
