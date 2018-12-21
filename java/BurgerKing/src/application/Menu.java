@@ -9,7 +9,11 @@ public class Menu {
 	public Menu() {
 
 	}
-
+	
+	public Menu(String name) {
+		this.name=name;
+	}
+	
 	public Menu(String id, String name, String cost) {
 
 		this.id = id;

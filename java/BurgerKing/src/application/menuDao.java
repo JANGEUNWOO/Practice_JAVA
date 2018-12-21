@@ -103,4 +103,44 @@ public class MenuDao {
 		}
 	}
 
+	// DB에 저장된 선택메뉴를 다시 불러옴
+	public void DBreturn() {
+
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		String sql = "select name from selected_tbl";
+
+		try {
+
+			pstmt = conn.prepareStatement(sql);
+			rs = pstmt.executeQuery();
+
+			// select한 결과는 ResultSet에 담겨 리턴된다.
+
+			while (rs.next()) {
+
+				data.add(new Menu(rs.getString("name")));
+
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println(e);
+		} finally {
+			try {
+				if (rs != null) {
+					rs.close();
+				}
+				if (pstmt != null) {
+					pstmt.close();
+				}
+
+			} catch (Exception e2) {
+				e2.printStackTrace();
+			}
+		}
+		// return menu;
+
+	}
+
 }
